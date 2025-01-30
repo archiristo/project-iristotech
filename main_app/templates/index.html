@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iristo.tech - Home</title>
+  <link rel="icon" href="{% static 'iristo.jpg' %}">
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+ <section class="about">
+        <h2 id="typing-effect"></h2><br>
+      <h3>Greetings everyone, welcome to my digital archive where I share my projects and ideas! Here, you'll see how an engineering student does things. Stay tuned, more on the way! :) </h3> 
+      <h3>-iris</h3>
+  </section>
+  
+  <!-- Ana Sayfa İçeriği -->
+  <main class="content">
+
+    <section class="card">
+      <h2>About me</h2>
+      <p>Click this button to know more about me!</p>
+      <a href="{% url 'about' %}" class="btn">More about iristo.tech</a>
+    </section>
+
+    <section class="card1">
+      <h2>Projects</h2>
+      <p>To see my projects on various topics, click this button.</p>
+      <a href="{% url 'project_list' %}" class="btn">My projects</a>
+    </section>
+
+    <section class="card2">
+      <h2>Blog</h2>
+      <p>When I write, actually I mostly write about science</p>
+      <a href="{% url 'blog_list' %}" class="btn">If you want to read, click here</a>
+    </section>
+
+    <section class="card3">
+      <h2>Contact me</h2>
+      <p>Feel free to get in touch!</p>
+      <p>email: iriskc27@gmail.com (I usually reply in a short time)</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 iristo.tech</p>
+    <div id="social-media">
+        <a href="https://www.instagram.com/archiristo/" target="_blank" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/archiristo" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/iris-koca-07a369325/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+  </footer>
+  <script src="{% static 'script.js' %}">
+ </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iristo.tech - {{ blog_post.title }}</title>
+  <link rel="icon" href="{% static 'iristo.jpg' %}">
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h2 id="typing-irs"></h2>
+    <a href="{% url 'about' %}" class="btn">About me</a>
+    <a href="{% url 'blog_list' %}" class="btn">Blog</a>
+    <a href="{% url 'index' %}" class="btn">Home</a> 
+    <a href="{% url 'project_list' %}" class="btn">Back to Projects</a>
+  </header>
+{% block content %}
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.description }}</p>
+    
+{% endblock %}
+<footer>
+    <p>&copy; 2025 iristo.tech</p>
+    <div id="social-media">
+        <a href="https://www.instagram.com/archiristo/" target="_blank" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/archiristo" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/iris-koca-07a369325/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+  </footer>
+  <script src="{% static 'script.js' %}"></script>
+</body>
+</html>

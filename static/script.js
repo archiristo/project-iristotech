@@ -39,3 +39,5 @@ window.onload = function() {
       typeEffect("typing-irs", "<iristo.tech>", 100);
   }
 };
+
+

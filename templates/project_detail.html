@@ -18,8 +18,8 @@
     <a href="{% url 'project_list' %}" class="btn">Back to Projects</a>
   </header>
 {% block content %}
-        <h2>{{ project.title }}</h2>
-        <p>{{ project.description }}</p>
+        <h1>{{ project.title }}</h1>
+        <h4>{{ project.description }}</h4>
     
 {% endblock %}
 <footer>

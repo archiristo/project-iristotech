@@ -9,6 +9,14 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  h1{
+    text-align: center;
+  }
+
+  h4{
+    text-align: center;
+  }
   
   /* Header ve Footer */
   header, footer {
@@ -52,7 +60,7 @@ body {
     background-color: black; /* Kutucukların arka planı siyah */
     border: 2px solid #a52929; /* Mor sınır çizgisi */
     padding: 30px;
-    margin: 0;
+    margin: 10px;
     width: 300px;
     max-width: 400px;
     text-align: center;
@@ -64,7 +72,7 @@ body {
     background-color: black; /* Kutucukların arka planı siyah */
     border: 2px solid #3571b6; /* Mor sınır çizgisi */
     padding: 30px;
-    margin: 0;
+    margin: 10px;
     width: 300px;
     max-width: 400px;
     text-align: center;

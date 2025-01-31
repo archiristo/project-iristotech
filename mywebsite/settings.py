@@ -30,7 +30,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['www.iristo.tech', 'iristo.tech']
 
-SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = False
 
 
 # Application definition

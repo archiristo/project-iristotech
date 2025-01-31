@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-#g4=b-nw+fn_vv$guhspr$ks5!7!*_(lo*@_04#d^l_yd4r6p0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.iristo.tech', 'iristo.tech']
+ALLOWED_HOSTS = ['*']
 
 SECURE_SSL_REDIRECT = False
 

@@ -161,9 +161,12 @@ body {
     .card {
       width: 90%;
     }
-    header h1 {
+    header h2 {
       font-size: 2em;
     }
+    .about h2{
+      font-size: 2em;
+    } 
   }
   
 

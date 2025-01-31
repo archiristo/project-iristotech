@@ -28,7 +28,9 @@ SECRET_KEY = 'django-insecure-#g4=b-nw+fn_vv$guhspr$ks5!7!*_(lo*@_04#d^l_yd4r6p0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.iristo.tech', 'iristo.tech']
+
+SECURE_SSL_REDIRECT = True
 
 
 # Application definition

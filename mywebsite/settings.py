@@ -56,6 +56,12 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://iristo.tech",
+    "https://www.iristo.tech"
+]
+
+
 ROOT_URLCONF = 'mywebsite.urls'
 
 TEMPLATES = [
